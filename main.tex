@@ -1,12 +1,14 @@
+\newif\ifdraft\drafttrue   % comments / todos for now
+\newif\iflater\laterfalse  % comments / todos for final version
+
 \documentclass[12pt]{article}
 
 \usepackage{fullpage}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{multicol}
 
-\newif\ifdraft\drafttrue
-
-\newcommand{\bcp}[1]{{\bf #1}}
+\newcommand{\bcp}[1]{\ifdraft{\bf #1}\fi}
 
 \begin{document}
 
@@ -18,32 +20,36 @@ Jens Palsberg (University of California, Los Angeles)}
 
 \maketitle
 
+% \begin{multicols}{3}
+
 ACM’s vibrant conference culture has a dark side: it contributes
 significantly to climate change.
 
-\begin{figure}[tb]
+\begin{figure}[t]
 \centering
 \includegraphics[width=4in]{wmo_stripes.png}
-\caption{Annual global temperatures, 1850 to 2018 (range from blue to red:
-  1.35 degrees C) \cite{WarmingStripes}}
+\caption{Variation in annual global temperature, 1850 to 2018 (range from
+  blue to red: $1.35^\circ$C) \cite{WarmingStripes}}
 \label{fig:warming}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[t]
 \centering
 \includegraphics[width=2in]{IPCC-cover.png}
 \caption{2018 IPCC report \cite{IPCC18}.  Key finding: Emissions must
   decline by at least 40 percent by 2030 and reach net zero by 2050, if we
-  are to hold warming to 1.5 degrees.  ``No documented historic precedent''
-  for the transformation of the world economy needed to achieve this.  }
-\label{fig:warming}
+  are to hold warming to 1.5 degrees.  There is ``no documented historic
+  precedent'' for the transformation of the world economy needed to achieve
+  this.  }
+\label{fig:IPCC-cover}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[t]
 \centering
 \includegraphics[width=6in]{SIGPLAN-confs.png}
 \caption{Carbon footprint per participant for travel to recent SIGPLAN
-  conferences\bcp{Get better file from Crista}} 
+  conferences\iflater\bcp{Get better file from the other paper, or get
+    better version of this one from Crista.}\fi} 
 \label{fig:confs}
 \end{figure}
 
@@ -53,7 +59,7 @@ emissions of carbon dioxide and other greenhouse gases (Figure
 generations: we are up against it now. Indeed, the UN’s Intergovernmental
 Panel on Climate Change (IPCC) recently reported that a 40\% decrease in
 emissions by 2030 is needed to avoid irreversible damage
-(Figure~\ref{IPCC-cover}). Achieving this will require urgent and sustained
+(Figure~\ref{fig:IPCC-cover}). Achieving this will require urgent and sustained
 commitment at all levels of society, including non-governmental communities
 such as universities, companies, and scientific societies like ACM.
 
@@ -146,15 +152,18 @@ leaders: organizations at every level must play their part in dealing with
 their own contributions, raising awareness, and establishing new ways of
 doing business in the lower-carbon future that is coming. For ACM, this
 especially means developing strategies for reducing the climate impact of
-conference-related travel. You can help in a number of ways: Get involved in
-raising awareness about this issue in the organizations you are a part of.
-For example, ask the organizers of the ACM conferences you attend what they
-are doing about reducing or offsetting emissions from participants’ travel.
-Analyze your organization’s carbon-emitting activities to inform a
-discussion of how best to reduce its footprint.  Connect with others that
-are engaging with these issues---in your workplace, in your other
-communities, and within ACM (e.g., on the acm-climate mailing list [5]).
-
+conference-related travel. You can help in a number of ways: 
+\begin{itemize}
+\item {\bf Get involved} in raising awareness about this issue in the
+organizations you are a part of.  For example, ask the organizers of the ACM
+conferences you attend what they are doing about reducing or offsetting
+emissions from participants’ travel.
+\item {\bf Analyze} your organization’s carbon-emitting activities to inform a
+discussion of how best to reduce its footprint.
+\item {\bf Connect} with others that are engaging with these issues---in
+your workplace, in your other communities, and within ACM (e.g., on the
+acm-climate mailing list [5]).
+\end{itemize}
 
 \bibliographystyle{unsrt}
 \bibliography{local}
@@ -187,28 +196,44 @@ Rob Bailis, Derik Broekhoff, and Carrie M. Lee.  Stockholm Environment Institute
 
 \section*{Things to do}
 
-Final things to do:
+\paragraph*{Final things to do:}
+\begin{itemize}
+\item 
 Check where we’ve used ``carbon'' (or CO2) and where ``greenhouse gases''.  Gloss CO2 or CO2e as appropriate.
-Reformat (in latex?) to sharpen images
+\end{itemize}
 
-Discussions:
+\paragraph*{Discussions:}
+\begin{itemize}
+\item 
 About Crista’s figure:
 BCP: Would be great to supplement with a more refined analysis of registrations for each of these conferences; then we could add a "center of mass" dot for each of the conferences to the map. This would still not tell the whole story, since it's possible (likely) that the registration totals would have been different if the conferences had been located differently. But it would help tell the story.
+\item 
 Also about Crista’s figure:
+\begin{itemize}
+\item 
 BCP: We should quantify what the red and blue dots mean -- i.e., give readers an idea what overall difference a change of location would make to carbon footprint.
-Mike: The dot colors mean per-capita footprint. Could we make their size represent the total footprint? Far-flung places might be high per-capita, but lower overall.
-Crista: The order by total footprint is very similar to the normalized one. Here are the 5 top offenders by that criteria: ICFP-Japan, POPL-LA, POPL-SD, SPLASH-Vancouver, PLDI-Barcelona. There are some changes in the order of the conferences in the middle. I hesitated which plot to draw (each has positives and negatives) but decided this one would be less problematic. I don't think we have space for two, and overlaying the 2 data series will be confusing...
-BTW, there's a LOT more that can be said about this data... But I think that will distract from the main message of this article. We need to chose whether this 2-page article is about the data analysis of our conferences or about a call for action. Maybe we can write a data analysis paper, upload it on arXiv, and link to it from this article?
+\item Mike: The dot colors mean per-capita footprint. Could we make their size represent the total footprint? Far-flung places might be high per-capita, but lower overall.
+\item Crista: The order by total footprint is very similar to the normalized one. Here are the 5 top offenders by that criteria: ICFP-Japan, POPL-LA, POPL-SD, SPLASH-Vancouver, PLDI-Barcelona. There are some changes in the order of the conferences in the middle. I hesitated which plot to draw (each has positives and negatives) but decided this one would be less problematic. I don't think we have space for two, and overlaying the 2 data series will be confusing...
+\item BTW, there's a LOT more that can be said about this data... But I think that will distract from the main message of this article. We need to chose whether this 2-page article is about the data analysis of our conferences or about a call for action. Maybe we can write a data analysis paper, upload it on arXiv, and link to it from this article?
+\item
 For example: POPL-Paris was the absolute winner by all criteria: it had the highest number of participants, the second-lowest normalized carbon footprint, and was mid-point in total carbon footprint, even with all those participants.
 This is just one tidbit; there are many more interesting facts in this data.
+\end{itemize}
+\item 
 From Michael Coblenz:
 What about research on energy-efficient computing? The impact of this research might be far more significant than that of mitigating our direct carbon emissions, and this is more in line with the core skills of the community.
 Also, what about research on telepresence and virtual meetings? There’s obviously a lot of work in this area, but we may need more in order to (a) let us effectively trade off options, e.g. virtual PC meeting vs in-person; (b) improve the state of the art to make remote meetings more effective.
 Consider also discussing the diversity implications on travel. Reducing travel expectations might make the field more attractive to women, who may face higher social expectations to stay home (and are more likely to be single parents). Surely there is a good article to cite here. I found https://journals.sagepub.com/doi/abs/10.1177/0950017006066999 but maybe there is something better. I’m looking…
+\item 
 Consider citing the new IEA report as another piece of evidence that action is needed
+\item 
 From Sophia: Does the article need an abstract to "set the reader's expectations"? I expected that there would be a list of actions in the end, or recommended resolutions. Instead, the article is more about what some communities do, and where individuals may be involved.  Perhaps say: "In this article we give a short overview of how different SCM communities tackle this problem, what thought are relevant to it, and conclude with suggestions on how to get involved". It breaks the flow, but it clarifies what the article is about.
+\item 
 Is citation 10 CO2 or CO2e?
+\item 
 Is there a ``more authoritative'' source for price of carbon offsets than [4]?
+\end{itemize}
 \fi
 
+% \end{multicols}
 \end{document}
