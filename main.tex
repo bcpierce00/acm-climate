@@ -9,6 +9,7 @@
 \usepackage{multicol}
 
 \newcommand{\bcp}[1]{\ifdraft{\bf #1}\fi}
+\newcommand{\COtwoE}{CO$_2$e}
 
 \begin{document}
 
@@ -67,34 +68,35 @@ Why ACM? Because one of ACM’s main activities is organizing international
 conferences, and these produce significant emissions of greenhouse gases,
 particularly from air travel. For example, a single round-trip flight from
 Philadelphia to Paris emits the equivalent of about 2 tons of carbon dioxide
-(CO2e) per passenger. Compare this against the fact that the average US
+(\COtwoE) per passenger. Compare this against the fact that the average US
 resident emits about 16.5 tons per year, while the average European emits
-about 7 tons [10].  Moreover, these emissions have no near-term
+about 7 tons~\cite{emissions}.  Moreover, these emissions have no near-term
 technological fix because jet fuel is difficult to replace with renewable
-energy sources [7]. So reducing the CO2e footprint of conferences is going
+energy sources~\cite{elec-air}. So reducing the \COtwoE{} footprint of conferences is going
 to require a reduction in the footprint of the attendees’ air travel.
 
 We are the members of an {\em ad hoc} Committee on Climate Change within
 SIGPLAN (ACM’s Special Interest Group on Programming Languages) that was
 formed in 2016 to consider possible strategies for mitigating the emissions
-of our conferences [3]. Among the ones we consider most attractive are:
-making it easier to use carbon offsets to mitigate aviation emissions for
-conferences, choosing conference locations with an eye to minimizing
-emissions, co-locating or merging conferences, virtualizing program
-committees, and supporting remote participation.
+of our conferences \cite{ClimateCommitteReport}. Among the ones we find most
+attractive are: making it easier to use carbon offsets to mitigate aviation
+emissions for conferences, choosing conference locations with an eye to
+minimizing emissions, co-locating or merging conferences, virtualizing
+program committees, and supporting remote participation.
 
 Buying carbon offsets to reduce the impact of air travel is an ``easy win''
-[4].  The idea of carbon offsets is to pay somebody to plant trees, capture
+\cite{CarbonOFfsetReport}.  The idea of carbon offsets is to pay somebody to plant trees, capture
 methane (from landfills or cattle herds, for example), buy cookstoves to
 replace inefficient open-fire cooking in poor communities, or carry out
 other actions that remove greenhouse gases from the air or prevent their
 emission. At the moment, the average air travel to an international
-conference can be offset by paying around \$30 [4].  ACM could streamline
+conference can be offset by paying around \$30 \cite{CarbonOFfsetReport}.
+ACM could streamline 
 the purchase of such offsets and make offsetting the default by folding them
 into its conference registration fees.
 
 Unfortunately, carbon offsetting is only a short-term mitigation, since the
-potential supply of offsets is far less than the potential demand [11]. We
+potential supply of offsets is far less than the potential demand~\cite{SEI-Report}. We
 must also begin significantly reducing emissions, which means reducing the
 distance traveled by the sum of all conference participants.
 
@@ -104,7 +106,7 @@ the center of mass of their potential participants.  For example, SIGGRAPH
 year---an easy call as this is near an international airport and a major hub
 of the worldwide entertainment industry. For other research areas, the
 effects of location choice are less obvious. For example,
-Figure~\ref{fig:SIGPLAN-confs} plots the 
+Figure~\ref{fig:confs} plots the 
 locations of the four major SIGPLAN conferences over the past five years,
 colored according to the estimated average carbon footprint per
 participant. The figure shows that there were significant differences across
@@ -132,11 +134,11 @@ main conferences now use online PC meetings rather than in-person ones.
 We can attend some conferences online, saving both emissions and travel
 time.  Indeed, SIGPLAN already livestreams all its four main conferences,
 while SIGACCESS and SIGCHI have experimented with telepresence robots at
-their main conferences [8,9]. Journal-first initiatives, which make
-conference attendance optional, could also help.  Looking further ahead,
-some communities are already experimenting with fully virtual conferences
-[6].  ACM members can contribute to the development of technologies for
-connecting people effectively at a distance.
+their main conferences~\cite{CHI-remote,Neustaedter}. Journal-first
+initiatives, which make conference attendance optional, could also help.
+Looking further ahead, some communities are already experimenting with fully
+virtual conferences~\cite{OS}.  ACM members can contribute to the
+development of technologies for connecting people effectively at a distance.
 
 Each of these strategies will have some beneficial effect on emissions.
 Each may also have downsides---for example, locating conferences near their
@@ -162,47 +164,24 @@ emissions from participants’ travel.
 discussion of how best to reduce its footprint.
 \item {\bf Connect} with others that are engaging with these issues---in
 your workplace, in your other communities, and within ACM (e.g., on the
-acm-climate mailing list [5]).
+acm-climate mailing list~\cite{acm-climate}).
 \end{itemize}
 
 \bibliographystyle{unsrt}
 \bibliography{local}
 
-
-\section*{More References (to be bibtexified)}
-\begin{itemize}
-\item 
-[3] Engaging with Climate Change: Possible Steps for SIGPLAN. Preliminary Report of the SIGPLAN Climate Committee.  Michael Hicks,​ ​Crista Lopes, and​ ​Benjamin C. Pierce. Version 1.2, June 2018. http://www.cis.upenn.edu/~bcpierce/papers/sigplan-climate-report.pdf
-\item [4] Carbon Offsets: An Overview for Scientific Societies.  Richard Kim and ​Benjamin C. Pierce. Version 1.2 June 24, 2018.  http://www.cis.upenn.edu/~bcpierce/papers/carbon-offsets.pdf
-\item[5] acm-climate mailing list, https://groups.google.com/forum/\#!forum/acm-climate
-[6] OpenSimulator Community Conference, https://conference.opensimulator.org/2018/
-\item [7] Why Aren’t There Electric Airplanes Yet? Venkat Viswanathan, Shashank Sripad, and William Leif Fredericks. November 2018. https://www.universal-sci.com/headlines/2018/11/30/-why-arent-there-electric-airplanes-yet
-\item [8] CHI 2018, Remote Attendance, https://chi2018.acm.org/attending/remote-attendance/
-\item [9] Neustaedter, C., Tang, J., Singhal, S., Pan, R., Heshmat, Y., and Forghani, A. (2017) Telepresence Attendance at the ACM CSCW 2016 Conference, Connections Lab Technical Report 2017-0419-01, Simon Fraser University.
-\item [10] CO2 emissions (metric tons per capita). The World Bank Data Bank, using data from the Carbon Dioxide Information Analysis Center, Environmental Sciences Division, Oak Ridge National Laboratory, Tennessee, United States. Accessed December 2018. https://data.worldbank.org/indicator/EN.ATM.CO2E.PC
-\item [11]  Supply and sustainability of carbon offsets and alternative fuels for international aviation, by
-Rob Bailis, Derik Broekhoff, and Carrie M. Lee.  Stockholm Environment Institute, Working Paper 2016-03. https://www.sei.org/publications/carbon-offsets-aviation/			
-\end{itemize}
-
-
-\ifdraft
+\iflater
 \newpage
 \section*{Permissions for figures}
 
 [1] Creative Commons license
+
 [2] ``Reproduction of a limited number of figures or short excerpts of IPCC material is authorized free of charge and without formal written permission provided that the original source is properly acknowledged, with mention of the name of the report, the publisher and the numbering of the page(s) or the figure(s).''
+
 [3] Authors
 
 
-\section*{Things to do}
-
-\paragraph*{Final things to do:}
-\begin{itemize}
-\item 
-Check where we’ve used ``carbon'' (or CO2) and where ``greenhouse gases''.  Gloss CO2 or CO2e as appropriate.
-\end{itemize}
-
-\paragraph*{Discussions:}
+\section*{More Discussions:}
 \begin{itemize}
 \item 
 About Crista’s figure:
@@ -229,10 +208,13 @@ Consider citing the new IEA report as another piece of evidence that action is n
 \item 
 From Sophia: Does the article need an abstract to "set the reader's expectations"? I expected that there would be a list of actions in the end, or recommended resolutions. Instead, the article is more about what some communities do, and where individuals may be involved.  Perhaps say: "In this article we give a short overview of how different SCM communities tackle this problem, what thought are relevant to it, and conclude with suggestions on how to get involved". It breaks the flow, but it clarifies what the article is about.
 \item 
-Is citation 10 CO2 or CO2e?
+Is the citation for emissions by region CO2 or CO2e?
 \item 
-Is there a ``more authoritative'' source for price of carbon offsets than [4]?
+Is there a ``more authoritative'' source for price of carbon offsets than
+our carbon report?
 \end{itemize}
+\item \item 
+Check where we’ve used ``carbon'' (or CO2) and where ``greenhouse gases''.  Gloss CO2 or CO2e as appropriate.
 \fi
 
 % \end{multicols}
