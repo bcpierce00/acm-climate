@@ -1,0 +1,19 @@
+Dear CACM editors,
+
+We hereby submit the attached short manuscript for consideration as a CACM
+Viewpoints article.
+
+The four authors have been deeply involved in developing strategies for
+addressing the carbon footprint of conferences within SIGPLAN; the goal of
+the article is to begin the process of broadening what we feel is a crucial
+conversation to include voices from across ACM.  We've tried to be as
+succinct as possible while still conveying the core argument that this is an
+issue _for ACM_ and its members, along with a little taste of some potential
+strategies for addressing it.
+
+We have spoken to Andrew about our intention to submit such an article.  
+
+Best,
+
+    - Benjamin (and Mike, Crista, and Jens)
+
