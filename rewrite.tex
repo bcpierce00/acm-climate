@@ -1,0 +1,336 @@
+\newif\ifdraft\drafttrue   % comments / todos for now
+\newif\iflater\laterfalse  % comments / todos for final version
+
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\newcommand{\bcp}[1]{\ifdraft{\bf [bcp: #1]}\fi}
+\newcommand{\mwh}[1]{\ifdraft{\bf [mwh: #1]}\fi}
+\newcommand{\COtwoE}{CO$_2$e}
+
+\begin{document}
+
+\title{\Huge ACM and Climate Change}
+\author{Benjamin C. Pierce (University of Pennsylvania) \\
+Michael Hicks (University of Maryland) \\
+Crista Lopes (University California, Irvine) \\
+Jens Palsberg (University of California, Los Angeles)}
+
+\maketitle
+
+% \begin{multicols}{3}
+
+ACM's vibrant conference culture has a dark side: it contributes
+significantly to climate change. What should we do about it?
+
+\bigskip{}
+
+Experts say that human civilization must reduce CO2 emissions by 40\%
+by 2030. To do that, we all need to tighten our CO2-emitting belts. For
+academic computer scientists, from what activity should the CO2 reduction come?
+Look no further than our professional conferences. Air
+travel is CO2 heavy, on a per-capita basis. A few trans-oceanic trips
+is XXX CO2. Wow!
+
+As responsible scientists wanting to do our part to sustain our
+environment, should we eliminate (most) conferences, and thereby the
+travel to organize and attend them? Doing so could impose a high cost
+on scientific progress. Science is a fundamentally social process. The
+conference system leverages that, accelerating research through easy
+interaction, direct dissemination of results, and network building to
+further new work. It works well enough that conferences are
+proliferating and attendance is on the rise. So the challenge is: How
+do we weigh the benefits to science of conferences against their
+attendant CO2 (and other) costs? This seems like an extremely
+difficult question to answer.
+
+But not so fast: such difficult questions are answered all the time
+through the magic of markets. By mapping choices to currency amounts,
+markets facilitate individual valuation of costs and benefits across
+vastly different activities, like the cost of flying and staying in a
+hotel vs. the benefit of attending a scientific meeting. If the former
+was too high, we would not do the latter. To facilitate answers to
+difficult questions about CO2 costs, many are advocating CO2-centered
+markets, by placing a dollar cost on CO2 emissions. California has
+already done this. In a world in which CO2 had a cost, air travel
+would be more expensive because flyers would have to bear its CO2
+cost, too. The result would place downward pressure on conferences
+that were CO2-inefficient for their attendees.
+
+There’s no global market for CO2 just yet, so does that mean we should
+do nothing until there is one? Not necessarily. We can start to impose
+the discipline on ourselves right now.
+
+First, we can recognize there is an emerging price for CO2, which is
+the price of CO2 offsets. [Explain what they are.]
+
+With a CO2 cost in hand, we can establish an acceptable baseline CO2
+cost for an event. This baseline could be established by analyzing
+[...] Planners can track this cost according to the CO2 footprint of
+their attendees. [...]
+
+\hrule
+\clearpage
+
+\texdtbf{OLD STUFF HERE}
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=4in]{wmo_stripes.png}
+\caption{Variation in annual global temperature, 1850 to 2018 (range from
+  blue to red: $1.35^\circ$C) \cite{WarmingStripes}}
+\label{fig:warming}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=2in]{IPCC-cover.png}
+\caption{2018 IPCC report \cite{IPCC18}.  Key finding: Emissions must
+  decline by at least 40 percent by 2030 and reach net zero by 2050, if we
+  are to hold warming to 1.5 degrees.  There is ``no documented historic
+  precedent'' for the transformation of the world economy needed to achieve
+  this.  }
+\label{fig:IPCC-cover}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=6in]{SIGPLAN-confs.png}
+\caption{Carbon footprint per participant for travel to recent SIGPLAN
+  conferences\iflater\bcp{Get better file from the other paper, or get
+    better version of this one from Crista.}\fi} 
+\label{fig:confs}
+\end{figure}
+
+A broad scientific consensus warns that the earth is warming due to human
+emissions of carbon dioxide and other greenhouse gases (Figure
+\ref{fig:warming}). This is not a problem we can leave to future
+generations: we are up against it now. Indeed, the UN's Intergovernmental
+Panel on Climate Change (IPCC) recently recommended a 40\% decrease in
+emissions by 2030 to avoid irreversible damage
+(Figure~\ref{fig:IPCC-cover}). Achieving reductions on this scale will
+require urgent and sustained commitment at all levels of society, including
+non-governmental communities such as universities, companies, and scientific
+societies like ACM.
+
+Why ACM? Because one of ACM's main activities is organizing international
+conferences, which produce significant emissions of greenhouse gases,
+particularly from air travel. For example, a single round-trip flight from
+Philadelphia to Paris emits the equivalent of about 1.7 tons of carbon
+dioxide (\COtwoE) per passenger~\cite{carboncalculator}\iflater\bcp{Trim
+  citation?}\fi---a substantial fraction of the {\em total} yearly emissions
+for an average resident of the US (16.5 tons) or Europe (7
+tons)~\cite{emissions}.  \iflater\bcp{For comparison, ...  (put in some
+  figures about the footprints of a few other things that people might think
+  of reducing---driving, eating meat, upgrading their fridge...)}\fi{}
+Moreover, these emissions have no near-term 
+technological fix because jet fuel is difficult to replace with
+renewable energy sources~\cite{elec-air}. 
+\iflater\bcp{Trimmed this sentence: Reducing the \COtwoE{} footprint
+of conferences will require a reduction in the footprint of the attendees'
+air travel.}\fi
+
+We are the members of an {\em ad hoc} Committee on Climate Change within
+ACM's Special Interest Group on Programming Languages (SIGPLAN) that was
+formed in 2016 to consider possible strategies for mitigating the emissions
+of our conferences \cite{ClimateCommitteReport}. Among the ones we find 
+attractive are making it easier to use carbon offsets to mitigate aviation
+emissions for conferences, choosing conference locations with an eye to
+minimizing emissions, co-locating or merging conferences, virtualizing
+program committees, and supporting remote participation.
+
+Buying carbon offsets to reduce the impact of air travel
+\cite{CarbonOFfsetReport} is an ``easy win'' that conferences should
+implement now.  The idea of carbon offsets is to pay somebody to plant
+trees, capture methane (from landfills or cattle herds, for example), buy
+cookstoves to replace inefficient open-fire cooking in poor communities, or
+carry out other actions that remove greenhouse gases from the air or prevent
+their emission. At the moment, the average air travel to an international
+conference can be offset by paying around \$30 \cite{CarbonOFfsetReport}.
+ACM could streamline the purchase of such offsets and make offsetting the
+default by folding them into its conference registration fees.
+
+However, carbon offsetting is only a short-term mitigation, since the
+potential supply of offsets is far less than the potential
+demand~\cite{SEI-Report}. We must also begin significantly reducing
+emissions, which means reducing the distance traveled by the sum of all
+conference participants.
+
+One way to do this is to choose conference locations that are close to
+the center of mass of their likely participants.  For example, the
+SIGGRAPH conference on computer graphics
+locates in Los Angeles every other
+year---an easy call, as this is near both an international airport and a major hub
+of the worldwide entertainment industry. For other research areas, the
+effects of location choice are less obvious. For example,
+Figure~\ref{fig:confs} plots the 
+locations of the four major SIGPLAN conferences over the past five years,
+colored according to the estimated average carbon footprint per
+participant. The figure shows significant differences across
+conferences and across locations---indeed, a factor of two difference
+between the 
+lowest and highest. Why is this? One reason might be that the locus of a
+conference's population is closer to one location than another, and changing
+locations reduces the total cost. Another might be the presence of a local
+population that will only attend if the conference is very close to
+them. Our preliminary analysis suggests it may be both (and that deeper
+analysis is needed to understand the situation better). The larger question
+is how to use this kind of information to choose the best locations, over
+time, for a diffuse population.
+
+Another natural idea is to co-locate or consolidate conferences.  This is
+already standard practice in some communities---e.g., SIGGRAPH, SC, and CVPR
+are all ``the'' conference for their areas.  More communities---for example,
+the programming languages and security communities, each with four
+main conferences every year---could consider following suit.  A different
+twist on this idea would be to hold a single conference in two locations
+simultaneously (e.g., Boston and Paris), with a video link between the
+sites. Switching to virtual program committee meetings for conferences is
+another obvious step.\iflater \mwh{data about surprising connection to conference's
+  overall footprint?}\bcp{Or leave it for next round of revisions when we
+  may have done more/better analysis?}\fi{}  Indeed, this switch is already
+happening: we found in a recent poll of ACM SIG chairs that, across ACM, a
+majority of the SIGs' main conferences now use online PC meetings rather
+than in-person ones.
+
+Another approach is allowing some conference attendees to participate
+remotely, saving both emissions and travel time.  Indeed, SIGPLAN already
+livestreams all its four main conferences, while SIGACCESS and SIGCHI have
+experimented with telepresence robots at their main
+conferences~\cite{CHI-remote,Neustaedter}. \iflater\bcp{Next sentence breaks
+the flow a bit.  Cut it?}\fi{}Journal-first initiatives, which
+make conference attendance optional, can also help.  Looking further
+ahead, some communities are already experimenting with fully virtual
+% \mwh{reality?}
+% BCP: Seems redundant with "fully"
+conferences~\cite{OS}.  ACM members can contribute to the
+development of technologies for connecting people effectively at a distance.
+
+Each of these strategies will have some beneficial effect on emissions.  
+Each may also have downsides. For example, locating conferences
+near their existing centers of mass may discourage holding them in
+countries like India and China where the community is still developing,
+while virtual PC meetings and remote conference attendance may reduce
+opportunities for informal connections and mentoring.  Getting beyond easy,
+short-term solutions and fat-trimming exercises requires balancing competing
+concerns; this will demand significant  
+discussion, compromise, careful analysis of data, and creative
+experimentation.  
+%
+\iflater\bcp{Added remainder of paragraph.  I'm not sure the two sentences work
+  together very well, but I can't decide which to keep!  (Mike likes them
+  both.)}\fi%
+It will also involve questioning some fundamental assumptions about how
+research gets done---e.g., that more and bigger conferences are better, and
+that personal success is (positively) correlated with time spent in
+airports.
+%
+To thrive over the long haul, we need to begin imagining what a zero-carbon
+professional society will look like.
+
+The problem of climate change is too large and too urgent to leave to world
+leaders: organizations at every level must play their part by addressing
+their own contributions, raising awareness among their members, and
+establishing new ways of 
+doing business in the lower-carbon future that is coming. For ACM, this
+especially means developing strategies for reducing the climate impact of
+conference-related travel.
+%
+You can help accelerate this process in a number of ways: 
+\begin{itemize}
+\item {\bf Get involved} in raising awareness about this issue in the
+organizations you are a part of.  For example, ask the organizers of the ACM
+conferences you attend what they are doing about reducing or offsetting
+emissions from participants' travel.
+\item {\bf Analyze} your organization's carbon-emitting activities to inform a
+discussion of how best to reduce its footprint.
+\item {\bf Connect} with others that are engaging with these issues---in
+your workplace, in your other communities, and within ACM (e.g., on the
+{\tt acm-climate} mailing list~\cite{acm-climate}).
+\end{itemize}
+
+\bibliographystyle{unsrt}
+\bibliography{local}
+
+\iflater
+\newpage
+\section*{Permissions for figures}
+
+[1] Creative Commons license
+
+[2] ``Reproduction of a limited number of figures or short excerpts of IPCC material is authorized free of charge and without formal written permission provided that the original source is properly acknowledged, with mention of the name of the report, the publisher and the numbering of the page(s) or the figure(s).''
+
+[3] Authors
+
+
+\section*{More Discussions:}
+\begin{itemize}
+\item New comments from Judith Bishop:
+
+1. Figure 3 is unclear. I did not understand it. Maybe it is missing a key, or the circles are too small. A rework would be very beneficial.
+
+2. All articles benefit from headings. It reveals the structure of the paper at a glance and assists in avoiding repetition. Think about some headings. Have a look at some recent Viewpoints papers.
+
+3. The title is rather opaque. The article is mostly about conferences, so maybe that should be in the title. Viewpoints likes catchy titles, so something more personal such as "Your conference trip and climate change" might get more readers.
+
+4. The article does not mention the journal publication alternative to conferences. We all know that computer scientists fight fiercely for the status of their conference papers on their CVs. Maybe climate change will be the tipping point that will cause them to become more like their colleagues in other disciplines and publish in journals, with just one conference a year, to meet colleagues and catch up. From my side, I do think this aspect should be mentioned.
+
+\item Old comments from Andrew Chien:
+\begin{quote}
+So, should we really be so conference intensive? (we seem to be far more so than other disciplines)
+
+If we are going to have SIG conferences, as a staple of CS, do they actually need to be face to face?  (could
+make the f2f ones less frequent)  What would the scientific impact be?
+
+We seem to have wired into the economics of our conferences that "bigger attendance is better".  this supports
+the fixed costs, makes the hotels happy, etc.  Can we make conferences where smaller in-person attendance, but
+larger total engagement (whatever that means... perhaps virtual or after the fact interaction) is maximized?
+
+What does a zero-carbon professional society look like?  (if you peek at my zccloud.cs.uchicago.edu page, you'll
+see that I don't mean offset, but rather actual zero-incremental carbon emissions)
+
+If you've already thought about all of these, then that's great.  If not, please do take them as a set of potential
+challenges to consider (all voluntary... as I intend them only as suggestions).
+\end{quote}
+\item 
+About Crista's figure:
+BCP: Would be great to supplement with a more refined analysis of registrations for each of these conferences; then we could add a "center of mass" dot for each of the conferences to the map. This would still not tell the whole story, since it's possible (likely) that the registration totals would have been different if the conferences had been located differently. But it would help tell the story.
+\item 
+Also about Crista's figure:
+\begin{itemize}
+\item 
+BCP: We should quantify what the red and blue dots mean -- i.e., give readers an idea what overall difference a change of location would make to carbon footprint.
+\item Mike: The dot colors mean per-capita footprint. Could we make their size represent the total footprint? Far-flung places might be high per-capita, but lower overall.
+\item Crista: The order by total footprint is very similar to the normalized one. Here are the 5 top offenders by that criteria: ICFP-Japan, POPL-LA, POPL-SD, SPLASH-Vancouver, PLDI-Barcelona. There are some changes in the order of the conferences in the middle. I hesitated which plot to draw (each has positives and negatives) but decided this one would be less problematic. I don't think we have space for two, and overlaying the 2 data series will be confusing...
+\item BTW, there's a LOT more that can be said about this data... But I think that will distract from the main message of this article. We need to chose whether this 2-page article is about the data analysis of our conferences or about a call for action. Maybe we can write a data analysis paper, upload it on arXiv, and link to it from this article?
+\item
+For example: POPL-Paris was the absolute winner by all criteria: it had the highest number of participants, the second-lowest normalized carbon footprint, and was mid-point in total carbon footprint, even with all those participants.
+This is just one tidbit; there are many more interesting facts in this data.
+\end{itemize}
+\item 
+From Michael Coblenz:
+What about research on energy-efficient computing? The impact of this research might be far more significant than that of mitigating our direct carbon emissions, and this is more in line with the core skills of the community.
+Also, what about research on telepresence and virtual meetings? There's obviously a lot of work in this area, but we may need more in order to (a) let us effectively trade off options, e.g. virtual PC meeting vs in-person; (b) improve the state of the art to make remote meetings more effective.
+Consider also discussing the diversity implications on travel. Reducing travel expectations might make the field more attractive to women, who may face higher social expectations to stay home (and are more likely to be single parents). Surely there is a good article to cite here. I found https://journals.sagepub.com/doi/abs/10.1177/0950017006066999 but maybe there is something better. I'm looking…
+\item 
+Consider citing the new IEA report as another piece of evidence that action is needed
+\item 
+From Sophia: Does the article need an abstract to "set the reader's expectations"? I expected that there would be a list of actions in the end, or recommended resolutions. Instead, the article is more about what some communities do, and where individuals may be involved.  Perhaps say: "In this article we give a short overview of how different SCM communities tackle this problem, what thought are relevant to it, and conclude with suggestions on how to get involved". It breaks the flow, but it clarifies what the article is about.
+\item 
+Is the citation for emissions by region CO2 or CO2e?
+\item 
+Is there a ``more authoritative'' source for price of carbon offsets than
+our carbon report?
+\end{itemize}
+\item \item 
+Check where we've used ``carbon'' (or CO2) and where ``greenhouse gases''.  Gloss CO2 or CO2e as appropriate.
+\fi
+
+% \end{multicols}
+\end{document}
