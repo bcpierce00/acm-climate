@@ -12,6 +12,8 @@
 \newcommand{\mwh}[1]{\ifdraft{\bf [mwh: #1]}\fi}
 \newcommand{\COtwoE}{CO$_2$e}
 
+\newcommand{\SECTION}{\paragraph*}
+
 \begin{document}
 
 \title{\Huge Conferences in the Era of Expensive Carbon}
@@ -45,16 +47,6 @@ significantly to climate change.
 %   this.  }
 % \label{fig:IPCC-cover}
 % \end{figure}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=6in]{SIGPLAN-confs.png}
-\includegraphics[width=6in]{ParticipantsOriginAll.png}
-\caption{Top: carbon footprint per participant for travel to recent SIGPLAN
-  conferences\iflater\bcp{Get better file from the other paper, or get
-    better version of this one from Crista.}\fi Bottom: origin of participants for each conference.} 
-\label{fig:confs}
-\end{figure}
 
 A broad scientific consensus warns us that human
 emissions of carbon dioxide and other greenhouse gases are warming the earth.
@@ -97,7 +89,9 @@ conference travel against the social benefits of the scientific progress
 that comes from conferences?  It seems an extremely difficult question to
 answer: the harm and the compensating benefits cannot be directly
 compared---they are apples and oranges.  
-%
+
+\SECTION{Putting a Price on Carbon}
+
 Fortunately, there is a well-established mechanism for comparing apples and
 oranges (indeed, for comparing almost anything): the magic of markets.  By
 mapping choices and preferences in disparate domains to a common scale
@@ -126,65 +120,78 @@ in a world where air travel is more expensive?  Believing that it needs to
 come as quickly as possible to avert disaster, what can we do to accelerate
 the process?
 
-A possible short-term response to both questions involves {\em carbon
-  offsets}---a tool by which organizations (and individuals) can voluntarily
-impose a price on their own emissions.
+\SECTION{Carbon Offsets}
+
+In the short term, one possible response to both questions is to use {\em
+  carbon offsets}, which allow organizations (and individuals) to
+voluntarily impose a price on their own emissions~\cite{CarbonOFfsetReport}.
 %
-% What they are:
 In a nutshell, the idea is that a conference can raise funds from
 registration fees or corporate sponsors and give them, via a carbon offset
 {\em vendor}, to a {\em provider} who will use them to support an activity
 (e.g., installing methane capture devices on landfill sites or buying
 efficient cookstoves to replace open-fire cooking in developing areas) that
-avoids emitting an amount of greenhouse gases equivalent to the emissions
-from participants' travel to the conference.
+is {\em certified} (by yet another organization) to permanently avoid
+emitting an amount of greenhouse gases equivalent to the emissions from
+participants' travel to the conference.
 %
-Many organizations (including numerous universities, companies such as
-Google, Dell, Microsoft, General Motors, Delta Airlines, Expedia, and
-others) are already buying carbon offsets; some ACM conferences have already
-started to experiment with voluntary carbon offset fees at registration
-time.
+Many organizations (including companies such as Google, Dell, Microsoft,
+General Motors, Delta Airlines, Lyft, and Expedia, numerous universities,
+and a number of academic societies) are already buying carbon offsets, and
+some ACM conferences have already started to experiment with voluntary
+carbon offset fees at registration time.
 
-We acknowledge that there are some significant concerns with carbon offsets.
-\begin{itemize}
-\item Concern: Organizations are not set up to do it, and the piecemeal
-political and bureaucratic work of designing and implementing a separate
-policy for each organization is exhausting.
-\item Concern: It is hard to choose the price (right now there is an
-oversupply), and setting it too low leads to complacency --- it doesn't
-really bite, so it doesn't change people's behavior.  The current market
-price of carbon is still quite low (around \$15 per ton), whereas the
-``social cost of carbon'' is variously estimated at anywhere from \$40 to
-\$400 per ton~\bcp{citation}.
-Experts agree that the current price will need to rise significantly
-over time to achieve the required effect.
-\item This issue leads many people to argue that offsets "let people off the
-hook" and encourage inaction, but we believe it is consistent with
-encouraging action -- especially if offsets are priced right, but even if
-(in the short term) they are too cheap -- because it injects a ``price
-signal'' that makes emissions something for planners to optimize.
-\item We feel that, on balance, voluntary carbon offsets are an effective
-tools for raising awareness and changing organizational behavior in the
-short term.
-\item Moreover, supporting well-chosen carbon mitigation activities has a
-clear benefit and can be done now.
-\end{itemize}
+Carbon offsets do come with some significant concerns.
+%
+A superficial but potentially sigificant issue is that most
+organizations do not currently have accounting procedures in place to deal
+with them, and the piecemeal political and bureaucratic work of designing
+and implementing a separate policy for each organization can consume
+significant energy.
+%
+A more fundamental problem is that it is not straightforward to decide how
+much it should cost to offset a ton of carbon: current prices vary widely
+around an average of around \$15 per ton, depending on the vendor, the
+nature of the offset project, the region of the world where it will be
+implemented, etc..  Worse, in order for offsets (or any other form of a
+carbon pricing) to fully motivate the needed changes in behavior, the price
+may need to go much higher---the true ``social cost'' of a ton of carbon is
+variously estimated at anywhere from \$40 to \$400 per
+ton~\bcp{citation}---and setting it too low may encourage complacency.
+%
+And finally, 
+%
+We feel that, on balance, voluntary carbon offsetting can be an
+effective tool for raising awareness and changing organizational behavior
+in the short term.
+%
+Moreover, supporting well-chosen carbon mitigation activities has a clear
+benefit in reducing global net emissions now.
 
-Beyond imposing a price on our carbon footprint (or waiting for one to be
-imposed from outside), a sane response to climate change should clearly also
-include taking steps to reduce the size of this footprint.  
-\bcp{
-  \begin{itemize}
-  \item Briefly list a few things we can do
-  \begin{itemize}
-  \item journalize conferences
-  \item go virtual
-  \item potential parts of a solution: regional conferences, virtual PC
-  meetings, virtual participation, mega-conferences
-  \end{itemize}
-  \item cite our report
-  \end{itemize}
-}
+\SECTION{Measure, Analyze, Optimize}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=6in]{SIGPLAN-confs.png}
+\includegraphics[width=6in]{ParticipantsOriginAll.png}
+\caption{Top: carbon footprint per participant for travel to recent SIGPLAN
+  conferences\iflater\bcp{Get better file from the other paper, or get
+    better version of this one from Crista.}\fi Bottom: origin of participants for each conference.} 
+\label{fig:confs}
+\end{figure}
+
+Beyond imposing a price on our carbon footprint (or waiting for one
+to be imposed from outside), a sane response to climate change should
+clearly also include taking steps to reduce the size of this footprint.  For
+conferences, there are many options that one might
+contemplate~\cite{ClimateCommitteReport}, from easy 
+but incremental changes like making program committee meetings virtual
+instead of physical and enabling virtual participation via live-streaming,
+all the way to complete re-imagining of conferences and their role in
+science (holding conferences completely in virtual spaces, replacing
+conferences with journals, etc.), with some intriguing hybrid forms in the
+middle (regional conferences, mega-conferences, conferences split into
+two locations on different continents, etc.).  
 %
 However, before we undertake large changes, we need to understand the
 situation better.  For most of these ideas, it is hard to confidently
@@ -199,6 +206,8 @@ this illustrates the difficulty and the need for careful data gathering and
 analysis.} 
 All parts of ACM should be doing this kind of analysis.  (The acm-climate
 mailing list is one place to exchange ideas about this.)
+
+\SECTION{Deeper Changes}
 
 Ultimately, responding to the inevitability of expensive carbon may involve
 rethinking the whole basis of how academic computer science is done.
