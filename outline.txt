@@ -1,0 +1,21 @@
+Paras 1-3.5 as now.
+
+Theme of paper: Public accounting for CO2e spent, and eventually: Putting a price on it, to create downward pressure. Could be ACM imposing the price, or society at large
+
+Accounting for CO2 spent
+- Analogy with calories displayed on menus
+- Data gathering now the responsibility of conference organizers 
+- Nudge toward dropping frivolous spending of CO2. A little bit about 
+  optimizing choices here
+  - What might they do? On-line PC meetings. Offsets. These are easy.
+    - CO2 offsets on registration pages, so that subtracted from their accounting
+  - But, what about CO2-friendly locations? Not so easy. Show our data. 
+
+Putting a price on CO2
+- Analogy: Charging more for higher calorie meals -- not there yet!
+- Ultimately we will have to do this when "easy" CO2 reductions aren't possible anymore -- organizers will really need to compare apples to oranges.
+- So: pricing. If ACM does it -- what will it do with the money?
+  - CO2 offsets, at first
+  - Good works of other sorts (OA?)
+- If society does it -- natural consequences. We ultimately hope to get here
+
