@@ -91,49 +91,100 @@ with renewable energy sources~\cite{elec-air}.
 % of conferences will require a reduction in the footprint of the attendees'
 % air travel.}\fi
 
-How should ACM respond to these facts?  We have two concrete proposals.
+How should ACM respond to these facts?  We have two concrete
+proposals. First, all ACM conferences should publicly account for CO2e
+spent as a result of hosting them. Second, ACM should embrace putting
+a \emph{price} on carbon in conference budgets, to create pressure on
+organizers to reduce its consumption.
 
 \SECTION{Mandate public accounting of carbon footprints.}  
 \bcp{The section headers could use some wordsmithing!}
 
-  \begin{itemize}
-  \item Proposal: Every ACM-sponsored conference should be required to
-  publicly report its carbon footprint (total and per-participant).
-  (Including PC meetings, participant travel, maybe hotel?).
-  \item ACM needs to provide tools to help conferences do this.  (SIGPLAN
-  built one.)
-  \item Benefits:
-  \begin{itemize}
-  \item Encourages people to pay attention, which will lead to some changes
-  in behavior all by itself. 
-  \item Generates data that will be needed for grounding discussions of how
-  optimize footprint.  E.g., SIGPLAN has mostly gone to virtual PC
-  meetings.  Livestreaming.
-  \end{itemize}
-\end{itemize}
-  
-These are things that we can and should be doing now.  Indeed, many parts
-of ACM are already doing them.  (In SIGPLAN, we have... and the experience
-has been...)
+Our first proposal is simple: Every ACM-sponsored conference should
+publicly report its carbon footprint, total and per-participant. A
+conference's footprint will be dominated by participants' air travel,
+but the accounting should not be limited to that: It should also
+include air travel to in-person PC meetings, and estimate hotel and
+food CO2e costs.
 
-However, going beyond these simple steps is going to be much more
-challenging.  One reason is that it isn't actually very clear what changes
-will help significantly.  (Describe some of our data.  Show the two
-diagrams.  Draw some conclusions / discuss why it's hard to draw
-conclusions.)  More data and more thorough analysis is needed.
+We hope that a public accounting will nudge conference organizers and
+attendees to change their behavior. As an analogy: Chain restaurants
+in the US are required by law to post calorie counts of food items on
+menu boards, and studies show that enlightened customers order, on
+average, up to 50 fewer calories a day, as a
+result~\cite{menu}. 
 
-But there is another, deep reason why going beyond simple measures is hard:
-while conferences damage the climate, they also create significant value!
+ACM can provide tools to help organizers account for this
+footprint. We recently worked with the ACM SGB to develop an air
+travel-focused CO2e calculator. One can input a CSV with registration
+data, and the calculator will compute the estimated CO2e cost of air
+travel for those sufficiently far away. This calculator could be
+expanded to support related costs. 
+
+SIGPLAN has been thinking about how to reduce CO2e usage over the past
+couple of years, informed by an accounting of CO2e expenditures. Doing
+so has led several conference organizers \mwh{name which conferences}
+to switch from holding in-person PC meetings to holding the meetings
+on-line instead. \mwh{Mention Jens survey here.} It has also prompted
+adding support for conference livestreaming (to go with talk
+recording) to permit remote participation.
+
+Most recently, we have been investigating how to purchase \emph{carbon
+  offsets} to defray CO2e costs.
+%
+A carbon offset is sold by a vendor who uses the raised funds to
+finance an activity that permanently avoids emitting an amount of
+greenhouse gases. That the CO2e emission avoidance is truth and not
+appearance can be certified by a watchdog organization. Typically,
+planting trees is not a certifiable activity (since it's hard to
+guarantee the trees won't be cut down), but installing methane capture
+devices on landfill sites or buying fuel-efficient stoves to replace
+open-fire cooking in poor communities can be.
+
+Many organizations (including companies such as Google, Dell,
+Microsoft, General Motors, Delta Airlines, Lyft, and Expedia, numerous
+universities, and a number of academic societies) now buy carbon
+offsets in order to reduce their overall footprint. ACM conferences
+could do the same, and the purchases would be included in their public
+accounting. We have been investigating this possibility for the past
+year. ACM has now agreed that conference attendees can opt to purchase
+an offset during registration, and ACM will use the designated funds
+to purchase an offset. Even getting to this stage required some
+investigation of the legality of ACM making the purchase on behalf of
+the registrant~\cite{CarbonOFfsetReport}. Ideally, the purchase of
+offsets would be made even simpler, but doing so requires further
+thought. 
+
+\SECTION{Put a Price on Carbon.}
+
+Publicly accounting for CO2e expenditures will incentivize eliminating
+CO2e-consuming activities whose corresponding value to the conference
+is likely to be low. But a public accounting is unlikely to
+incentivize major CO2e reductions, since these will require
+significant changes to conference system itself, which may negatively
+impact the value that conferences provide. 
+%
 Science is a fundamentally social process, and the conference system
 accelerates research through high-bandwidth interaction, direct
 dissemination of results, network building, and serendipitous
 cross-fertilization.
+%
+Organizers and attendees will be reticent to harm the scientific
+benefits they have all regularly experienced.
 
-This presents a puzzle: How can we weigh the environmental harm caused by
-conference travel against the social benefits of the scientific progress
-that comes from conferences?  The question is difficult because the harm and
-the compensating benefits cannot be directly compared---they are apples and
-oranges.
+(Mike: I think we can significantly trim the text below. Instead, we can
+talk here about a carbon tax as the next natural step. It can be
+related to the sugar tax that some municipalities have imposed; when
+public calorie counts are not enough to discourage use, add a tax
+instead. The arc from the bullet list can come earlier, basically.)
+
+Thus we have the question of apples and oranges: How can we weigh the
+environmental harm caused by conference travel against the social
+benefits of the scientific progress that comes from conferences?
+
+% The question is difficult because the harm and
+% the compensating benefits cannot be easily compared---they are apples and
+% oranges. 
 
 Fortunately, we have a well-established mechanism for comparing apples and
 oranges---indeed, for comparing almost anything!  Economists call it ``the
@@ -148,8 +199,6 @@ behavior.\bcp{See
   https://kleinmanenergy.upenn.edu/policy-digests/why-carbon-pricing-falls-short
   for lots of good phrasing and citations.}
 
-\SECTION{Put a Price on Carbon.}
-
   \begin{itemize}
   \item To motivate more painful changes and force people to make difficult
   choices, we need a price on carbon.
@@ -162,11 +211,20 @@ behavior.\bcp{See
   \item Benefit: This will create concrete downward pressure on conferences
   to decrease their footprints.  They can then choose (on the basis of
   careful analysis of data and weighing of benefits) how best to do so.
-  \item The money raised in this way can be used in many ways: buying carbon
-  offsets, supporting ``green computing research'', virtualizing conferences
+\item The money raised in this way can be used in many ways: buying
+  carbon offsets (Mike: could include text from below on this),
+  supporting ``green computing research'', virtualizing conferences
   (livestreaming, etc.), supporting a transition to a low-carbon / few
   conferences business model for ACM.
   \end{itemize}
+
+(Mike: Need to include somewhere above:)
+  
+However, going beyond these simple steps is going to be much more
+challenging.  One reason is that it isn't actually very clear what changes
+will help significantly.  (Describe some of our data.  Show the two
+diagrams.  Draw some conclusions / discuss why it's hard to draw
+conclusions.)  More data and more thorough analysis is needed.
 
 (Some kind of closing.)
 
