@@ -107,14 +107,6 @@ participants air travel, but the accounting should go beyond this to include
 air travel to in-person PC meetings and estimated hotel and food CO2e
 footprints.
 
-ACM can provide tools to measure emissions. As a start, SIGPLAN (the special
-interest group on programming languages) recently worked with ACM's SIG
-Governing Board to develop an air-travel-focused CO2e calculator for
-conferences. Users can upload conference registration data, and the
-calculator will estimate the CO2e cost of air travel for those sufficiently
-far away. This calculator could be expanded to account for other conference
-emissions.
-
 Public accounting will nudge conference organizers and attendees to change
 their behavior. By analogy, chain restaurants in the US are required by law
 to post calorie counts of food items on menu boards, and studies show that
@@ -172,6 +164,14 @@ that future organizers can use to optimize their own footprints.
   footprint), and if it's publicized in a centralized place and in a uniform
   format, then it becomes a resource for all sorts of useful analysis.}
 
+ACM can provide tools for gathering and publicizing this data. As a start,
+SIGPLAN (the special interest group on programming languages) recently
+worked with ACM's SIG Governing Board to develop an air-travel-focused CO2e
+calculator for conferences. Users can upload conference registration data,
+and the calculator will estimate the CO2e cost of air travel for those
+sufficiently far away. This calculator could be expanded to account for
+other conference emissions.
+
 
 \SECTION{Put a Price on Carbon.}
 
@@ -188,19 +188,42 @@ cross-fertilization.
 Organizers and attendees will be reticent to make changes that could
 harm the scientific benefits they have all regularly experienced.
 
-Indeed, a preliminary analysis that we have done with registration data for
-recent SIGPLAN conferences raises as many questions as it answers.
-\bcp{Talk about our data analysis, and how it could provide help with
-  this. We've started, and see that the situation is not very
-  clear. Describe some of our data.  Show the two diagrams.  Draw some
-  conclusions / discuss why it's hard to draw conclusions.  (This would be a
-  good place to refer to~\cite{ClimateCommitteReport}---we can enumerate
-  some of the alternatives that one might have hoped the data would help us
-  choose between.)}
+\begin{figure}[t]
+\centering
+\includegraphics[width=6in]{SIGPLAN-confs.png}
+\includegraphics[width=6in]{ParticipantsOriginAll.png}
+\caption{Top: carbon footprint per participant for travel to recent SIGPLAN
+  conferences\iflater\bcp{Get better file from the other paper, or get
+    better version of this one from Crista.}\fi.  Bottom: Origin of
+  participants for each conference.  \bcp{Explain in more detail, once we
+    have Crista's new figures.}} 
+\label{fig:confs}
+\end{figure}
 
-\bcp{Tricky transition here.  I think the point we want to make is that
-  these decisions are genuinely hard and painful, which is exactly what our
-  data shows.}
+The registration data we've gathered from SIGPLAN conferences illustrates
+some of the difficulties.  
+%
+\bcp{Explain the two diagrams.  Discuss how they can be used to draw
+  contradictory conclusions.  E.g., one of the many footprint-reduction
+  measures that have been discussed in SIGPLAN~\cite{ClimateCommitteReport}
+  is locating conferences near their historical ``center of mass.''  Looking
+  at the top diagram, one might thus be tempted to locate all conferences in
+  the northeast US or western Europe.  But the bottom figure shows that much
+  of the participation in each instance of a conference is local; always
+  holding a conference at its ``center of mass'' will damage local
+  communities everywhere else.  (Maybe this would be a good place to refer
+  to~\cite{ClimateCommitteReport}---we can enumerate some of the
+  alternatives that one might have hoped the data would help us choose
+  between.)}  
+%
+\bcp{Maybe we can replace the bottom part of the figure by some clearer way
+  of visualizing the observation that much of the attendance at each
+  conference is local?  E.g., what if, instead of color-coding the different
+  sections of the bars by continent, we instead color-coded them by distance
+  traveled (in buckets of 500 miles, say)?}
+
+\bcp{Summary: The data shows why these decisions are genuinely hard and
+  painful.}
 
 Nevertheless, it seems clear that the status quo is unsustainable, so hard
 choices will have to be made. How do we motivate organizers to make them?
