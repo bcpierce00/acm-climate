@@ -16,7 +16,7 @@
 
 \begin{document}
 
-\title{\Huge Conferences in an Era of Expensive Carbon}
+\title{\Huge Conferences in the Era of Expensive Carbon}
 % \title{\Huge ACM Conferences and Cost of Carbon}
 \author{Benjamin C. Pierce (University of Pennsylvania) \\
 Michael Hicks (University of Maryland) \\
@@ -91,25 +91,24 @@ with renewable energy sources~\cite{elec-air}.
 % of conferences will require a reduction in the footprint of the attendees'
 % air travel.}\fi
 
-How should ACM respond to these facts? We are the members of SIGPLAN's
-(the special interest group on programming languages) Climate
-Committee,\footnote{https://www.sigplan.org/Resources/Climate/} and we
-have been researching this 
-question for the past couple of years. Our work has led to two concrete
-proposals. First, all ACM conferences should publicly {\em account} for CO2e
-emitted as a result of putting them on. Second, ACM should put a
-\emph{price} on carbon in conference budgets, to create pressure on
-organizers to reduce their footprints.
+How should ACM respond to these facts?  Two years ago, SIGPLAN (ACM's
+Special Interest Group on Programming Languages) convened an ad hoc Climate
+Committee\footnote{https://www.sigplan.org/Resources/Climate/} to research
+this question.  After investigating many
+options~\cite{ClimateCommitteReport} and discussing intensively with SIGPLAN
+members and conference organizers, ACM staff, and other SIG leaders, we have
+two concrete proposals. First, all ACM conferences should publicly {\em
+  account} for CO2e emitted as a result of putting them on. Second, ACM
+should put a \emph{price} on carbon in conference budgets, to create
+pressure on organizers to reduce their footprints.
 
 \SECTION{Mandate public accountability.}  
-% \bcp{The section headers could use some wordsmithing!}
 
 Our first proposal is simple: Every ACM-sponsored conference should
-calculate and publicly report its carbon footprint (both aggregate and
-per-participant). Most conferences' footprints will be dominated by
-participants air travel, but the accounting should go beyond this to include
-air travel to in-person PC meetings and estimated hotel and food CO2e
-footprints.
+calculate and publicly report its carbon footprint. Most conferences'
+footprints will be dominated by participants air travel, but the accounting
+should go beyond this to include air travel to in-person PC meetings and
+estimated hotel and food CO2e footprints.
 
 Public accounting will nudge conference organizers and attendees to change
 their behavior. By analogy, chain restaurants in the US are required by law
@@ -119,17 +118,15 @@ result~\cite{menu}.
 
 SIGPLAN has been considering how to reduce CO2e usage over the past couple
 of years, informed by an accounting of its CO2e expenditures. This
-discussion has led the organizers of some of its flagship
-conferences\mwh{name which conferences}\bcp{POPL and ICFP, not PLDI; I don't
-  remember where SPLASH stands} to switch from in-person to on-line program
-committee meetings, joining a trend among other SIGs. \mwh{Mention Jens
-  survey here.} It has also prompted conferences to increase their
-investments in livestreaming and talk recording to permit remote
-participation.
+discussion has led the organizers of two of its flagship conferences (POPL
+and ICFP) to switch from in-person to on-line program committee meetings,
+joining a trend among other SIGs (\bcp{ZZZ} out of \bcp{WWW} report that
+their flagship meetings now have virtual PC meetings). It has also prompted
+conferences to increase their investments in livestreaming and talk
+recording to permit remote participation.
 
-SIGPLAN has also been exploring how to mitigate a conference's CO2e emissions
-by purchasing \emph{carbon
-  offsets}~\cite{CarbonOFfsetReport}.
+SIGPLAN has also explored how to mitigate a conference's CO2e emissions by
+purchasing \emph{carbon offsets}~\cite{CarbonOFfsetReport}.
 %
 A carbon offset is sold by a vendor who uses the raised funds to finance an
 activity that permanently avoids emitting some amount of greenhouse gases.
@@ -149,9 +146,9 @@ decided that conferences could offer attendees the option to pay for an
 offset during registration; the conference then uses the designated funds to
 purchase the offset from a qualified vendor.  Some conferences are also
 experimenting with corporate sponsorship of bulk offsets for the whole
-conference.\footnote{We acknowledge that carbon offsets are a
-  controversial tool\bcp{Cite the thing the reviewer pointed us to, as well
-    as the recent controversial UN report.}.  Besides issues with
+conference.\footnote{We acknowledge that carbon offsets are a controversial
+  tool~\cite{anderson2012inconvenient,
+  carbon-offsets-are-not-our-get-out-jail-free-card}.  Besides issues with
   verifiability and permanence, some observers worry that---especially given
   their currently artificially-low cost---they will encourage complacency,
   leading organizations to postpone making the difficult changes that will
@@ -161,22 +158,19 @@ conference.\footnote{We acknowledge that carbon offsets are a
 
 Beyond encouraging conferences to take these sorts of simple steps, public
 accounting of conference emissions footprints will generate valuable data
-that future organizers can use to optimize their own footprints.
-%
-\bcp{Talk about the little bit of data gathering that we've done.  Make the
-  point that, if the public accounting of conference carbon footprints is
-  detailed enough (e.g., including an origin city for each participant,
-  rather than just aggregate statistics on average per-participant
-  footprint), and if it's publicized in a centralized place and in a uniform
-  format, then it becomes a resource for all sorts of useful analysis.}
+that future organizers can use to optimize their own footprints.  Emissions
+data should be published both in aggregate form (total footprint for the
+conference and per-participant footprint), for quick reference, and in a raw
+form (a suitably anonymized record for each individual attending each
+conference, including originating city), and it should be made available in
+a central place and in a uniform format, to facilitate analysis.
 
 ACM can provide tools for gathering and publicizing this data. As a start,
-SIGPLAN recently
-worked with ACM's SIG Governing Board to develop an air-travel-focused CO2e
-calculator for conferences. Users can upload conference registration data,
-and the calculator will estimate the CO2e cost of air travel for those
-sufficiently far away. This calculator could be expanded to account for
-other conference emissions.
+SIGPLAN recently worked with ACM's SIG Governing Board to develop an
+air-travel-focused CO2e calculator for conferences. Users can upload
+conference registration data, and the calculator will estimate the CO2e cost
+of air travel for those sufficiently far away. This calculator could be
+expanded to account for other forms of conference emissions.
 
 
 \SECTION{Put a Price on Carbon.}
@@ -197,16 +191,20 @@ harm the scientific benefits they have all regularly experienced.
 \centering
 \includegraphics[width=6in]{SIGPLAN-confs2.png}
 \includegraphics[width=6in]{ParticipantsOriginAll2.png}
-\includegraphics[width=6in]{Distances.png}
-\caption{Top: carbon footprint per participant for travel to recent SIGPLAN
+% \includegraphics[width=6in]{Distances.png}
+\caption{Top: Carbon footprint per participant for travel to recent SIGPLAN
   conferences\iflater\bcp{Get better file from the other paper, or get
-    better version of this one from Crista.}\fi.  Middle: Origin of
-  participants for each conference. \bcp{Explain in more detail, once we
-    have Crista's new figures.} Bottom: Distances traveled by participants, one way, in Km; middle dashed line is the median travel distance.}
+    better version of this one from Crista.}\fi.  (Small dots represent
+  \bcp{XXX} tons of CO2e per participant; the largest dot represents
+  \bcp{YYY} tons per participant.) Bottom: Breakdown of 
+  continent-of-origin for participants in each conference. 
+% Bottom: Distances traveled by participants, one way, in Km; middle dashed
+% line is the median travel distance. 
+}
 \label{fig:confs}
 \end{figure}
 
-The registration data we've gathered from SIGPLAN conferences illustrates
+Registration data from recent SIGPLAN conferences illustrates
 some of the difficulties.  
 %
 \bcp{Explain the two diagrams.  Discuss how they can be used to draw
