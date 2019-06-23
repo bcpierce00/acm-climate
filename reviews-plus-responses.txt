@@ -1,0 +1,93 @@
+   06-Mar-2019
+
+   Dear Dr. Pierce:
+
+   Manuscript ID CACM-18-12-3311 entitled "ACM and Climate Change" which you submitted to the Communications of the ACM, has been reviewed.  The comments from reviewer(s) are included at the bottom of this letter.
+
+   In view of the comments from the reviewer(s), I must decline the manuscript for publication in Communications of the ACM at this time.  However, a new manuscript may be submitted which takes into consideration these comments.
+
+   Please note that resubmitting your manuscript does not guarantee eventual acceptance, and that your resubmission will be subject to re-review by the reviewer(s) before a decision is rendered.
+
+   You will be unable to make your revisions on the originally submitted version of your manuscript.  Instead, revise your own copy of the manuscript and resubmit upon completion.
+
+   Once you have revised your manuscript, go to https://mc.manuscriptcentral.com/cacm and login to your Author Center.  Click on "Manuscripts with Decisions," and then click on "Create a Resubmission" located next to the manuscript number.  Then, follow the steps for resubmitting your manuscript.
+
+   Because we are trying to facilitate timely publication of manuscripts submitted to the Communications of the ACM, your revised manuscript should be uploaded as soon as possible.  If it is not possible for you to submit your revision within a reasonable amount of time, we will consider your paper as a new submission. Please see deadlines on your ManuscriptCentral Author Dashboard. If you need a slight extension, please contact the Editor-in-Chief.
+
+   I look forward to a resubmission.
+
+   Sincerely,
+   Andrew A. Chien
+   William Eckhardt Professor, The University of Chicago
+   Editor-in-Chief, Communications of the ACM
+
+
+   Co-Chair: Co-Chair, Viewpoints
+   Comments to the Author:
+   I concur with the associate editor's recommendation.  The piece addresses an important issue, but can be strengthened by considering the reviewers' comments and resubmitting.
+
+   Associate Editor: Bishop, Judith
+   Comments to the Author:
+   Both eminent reviewers agree that the fundamental issue of the current emphasis on conferences as publication venues was side-stepped. It has to be made a priority, or else such a Viewpoint, published by the ACM, is misleading and counter-productive for combating climate change.
+
+We didn't end up putting this front and center, but we do make a pretty
+strong point about it in the penultimate paragraph.
+
+   I am very keen to publish a Viewpoint from your committee, but trust that you can give due attention to the reviews before a re-submission. You might also like to look at the editorial in the latest issue of CACM which indicates how important this matter is to the Association.
+
+
+   Reviewer: 1
+
+   Recommendation: Minor Revision
+
+   Comments:
+
+   This short paper clearly identifies the issues and possible solutions to reduce the carbon footprint of ACM conferences. It is well written and clear. 
+
+   Regarding suggested solutions, here is my feedback: 
+
+   - Choose conference locations … centre of mass …”. This would result into re-enforcing communities that are already dominating and preventing others, often from countries with less research funding, to participate. 
+   - Colocation: It is difficult for many people to stay away for extended periods of time and therefore to attend two or more conferences in a sequence. 
+   - Conference taking place in more than one location: One of the main — if not the main benefits— of conferences is networking. This would result into a split of research communities according to geographical location. 
+   - “Journal-first initiatives, which make conference attendance
+   optional, can also help.” I don’t understand this point. This initiative actually increase traveling to conferences, though it has many benefits. 
+   - “questioning some fundamental assumptions …” This is actually a very good point. The current emphasis on conferences as publication venues is wrong, inconsistent with other fields, and this has directly led to an inflation of conferences and traveling. I would pursue this avenue in priority. What is the really role of conferences in CS, do we need all of them? 
+
+   Additional Questions:
+
+   Reviewer: 2
+
+   Recommendation: Major Revision
+
+   Comments:
+   This paper argues that ACM conferences represent a significant carbon footprint, which cannot easily be reduced without substantially changing how conferences are run, as there are no low-carbon alternatives for long distance travel. The paper sets out some suggestions for what to do about this, and invites a broader discussion.
+
+   I completely agree with the argument that the ACM conference model needs to be re-thought, and hence I strongly support the publication of a viewpoint on this topic, to challenge the community to grapple with this challenge.
+
+   Unfortunately, the current manuscript suffers from many flaws, which need to be addressed before publication. Most importantly, the urgency of the problem set out in the first few paragraphs is somewhat undermined by a series of weak, incrementalist suggestions, none of which really get to the heart of the problem. I'm reminded of the countless articles that exhort people to deal with climate change by changing their lightbulbs and recycling more. Quite frankly, I thought we'd moved on beyond trying to solve climate change by encouraging individuals to make different choice. Such suggestions don't work, because the systemic conditions that drive those choices continually reward the behaviours we are asking people to stop doing. Put simply, ACM members fly all over the world to conferences because it's essential to their careers. You cannot stop that without a deeper systemic analysis of the perverse incentives that drive those behaviours. 
+
+   The "solutions" presented in this article all smack of timid incrementalism. If you read the IPCC reports carefully, it becomes clear that the problem isn't finding ways to cut emissions on the activities we currently carry out. The real challenge is to completely eliminate all CO2 emissions by around 2050-2060, and then moving into global negative emissions during the second half of the century. Every tonne of CO2 emitted between now and then matters. Small reductions in emissions won't get us where we need to be.
+
+   So let's look at the suggestions made in this paper, starting with carbon offsets. Carbon offsets are nothing short of a scam. Climate scientist Kevin Anderson describes it as "worse than doing nothing", as it almost certainly causes an increase in global emissions. See for example, Anderson, 2012, The inconvenient truth of carbon offsets. Nature, 484, 7 (05 April 2012). Building these into ACM conference fees means we'll all be paying to make the problem worse. I don't believe offsets have any place in a serious discussion of action on climate change.
+
+We respectfully disagree here.  
+
+   Then there's the suggestion to explore remote attendance. It's naive to suggest this without discussing the revenue model for ACM conferences. Conference chairs are strongly motivated by ACM’s conference budget process to maximize onsite attendance (full registration fees), and ACM's policies currently penalize authors who can’t attend to present their work, for example with the threat of having their papers excluded from the proceedings. Further, it’s highly likely that many ACM members only renew each year to get discounted conference registration. ACM will not support attempts to reduce conference attendance while its revenue model depends on maximizing such attendance. So a serious look at ACM's revenue model and conference planning policies are needed here.
+
+   A notable absence in the list of suggestions is a complete switch away from conferences as the default venue for peer reviewed publication in computer science. Very few other fields use conferences in the same way we do - most fields use journal publication exclusively, with no peer reviewed conferences at all - conferences are then used just for the networking role, with typically a single large conference once per year in each field. Doing this would entirely eliminate the need to travel to many different conferences over the course of each year (and incidentally, would also solve many other problems associated with conference peer review - see DOI:10.1145/1531793.1531815). The article does mention journal-first tracks, which are a baby step in this direction. But if we're serious about tackling climate change, sooner or later we have to find a way to completely decouple peer reviewed publication from the need to travel.
+
+   The ACM is also uniquely placed to explore technologies that would help other scholarly communities cut their travel carbon footprints. For example, the ACM could work with a number of conference venues around the world to build remote connection facilities into convention centres to enable federated conferences, where participants only travel to a local centre, but still gain many of the intangible benefits of networking with their global community. Such technologies must move beyond the idea of webcasting and remote talk presentation, to technologies that support the informal, unplanned interactions that constitute the main benefit of conference attendance.
+
+   So, overall, while I welcome the publication of a viewpoint on this, I would prefer to see something that really gets to grips with the scale and urgency of the problem, and the systemic incentives that drive the ACM community to run and attend ever more conferences. The current article merely pushes dubious and ineffective non-solutions.
+
+   In addition to these comments, the figures in the paper are all problematic:
+
+   Figure 1 is a neat visualization, but without a proper key, it's fairly meaningless. Several other time-series representations of the same data from the IPCC reports would be much better choices.
+
+   Figure 2 seems like a waste of space - do we really need to see a book cover?
+
+   Figure 3 is interesting, but again lacks a key, so it's not clear what the colours represent. And even with a key, the coloured dots will be hard to see. Surely there's a better way to visualize this?
+
+
+
+   Additional Questions:
