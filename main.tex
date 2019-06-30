@@ -12,7 +12,8 @@
 \newcommand{\mwh}[1]{\ifdraft{\bf [mwh: #1]}\fi}
 \newcommand{\COtwoE}{CO$_2$e}
 
-\newcommand{\SECTION}{\paragraph*}
+\newcommand{\SECTION}{\section*}
+\newcommand{\PARAGRAPH}{\paragraph*}
 
 \begin{document}
 
@@ -102,16 +103,17 @@ putting them on. Second, ACM should put a \emph{price} on carbon in
 conference budgets, to create pressure on organizers to reduce their
 footprints.  
 
-\SECTION{Mandate public accountability.}  
+\SECTION{Mandate public accountability} 
 
 Our first proposal is simple: {\bf Every ACM-sponsored conference should
 publicly report its carbon footprint.} 
 %
 Public accounting will nudge conference organizers and attendees to change
-their behavior. (By analogy, chain restaurants in the US are required by law
+their behavior. By analogy, chain restaurants in the US are required by law
 to post calorie counts of food items on menu boards, and studies show that
 enlightened customers order, on average, up to 50 fewer calories a day as a
-result~\cite{menu}.)  
+result~\cite{menu}.  
+%MWH: I don't know why this should be a parenthetical.  Why would the analogy be an aside? It is meant to connect the reader's understanding to what we are proposing, explciitly; it is meant to be read, not skipped over.
 
 As a case in point, SIGPLAN has been considering how to reduce {\COtwoE} usage
 over the past couple of years, informed by an accounting of its own {\COtwoE}
@@ -122,6 +124,8 @@ virtual PC meetings for their flagship conferences. SIGPLAN's accounting has
 also prompted several conferences to increase their investments in
 livestreaming and video recording to support remote participation.
 
+\PARAGRAPH{Carbon Offsets}
+%
 SIGPLAN has also explored how to mitigate a conference's {\COtwoE} emissions by
 purchasing \emph{carbon offsets}~\cite{CarbonOFfsetReport}.
 %
@@ -133,7 +137,7 @@ activity, since it's hard to guarantee the trees won't be cut down, but
 installing methane capture devices on landfill sites or buying
 fuel-efficient stoves to replace open-fire cooking in poor communities can
 be.)
-%
+
 Many organizations, including companies such as Google, Dell, Microsoft,
 General Motors, Delta Airlines, Lyft, and Expedia, numerous universities,
 and some academic societies, now buy carbon offsets in order to reduce their
@@ -144,8 +148,8 @@ offset during registration; the conference then uses the designated funds to
 purchase the offset from a qualified vendor.  Some conferences are also
 experimenting with corporate sponsorship of bulk offsets for the whole
 conference.  
-%
-(We acknowledge that carbon offsets are a 
+
+We acknowledge that carbon offsets are a 
   controversial 
   tool~\cite{anderson2012inconvenient,
   carbon-offsets-are-not-our-get-out-jail-free-card}.  Besides issues with
@@ -154,13 +158,17 @@ conference.
   leading organizations to postpone making the difficult changes that will
   be required to sustainably decarbonize society.  We believe that offsets
   should be considered as a useful short-term expedient, to be considered in
-  parallel with, not instead of, more difficult cutting.)
+  parallel with, not instead of, more difficult cutting.
+%MWH: It's a bit odd to have two lengthy parenthetical asides in the same
+paragraph. I think this one is on point, so need not be an aside.
 % \mwh{Should
 % we mention the FCRC numbers here? 45 out of 2,700 used {\COtwoE} offsets}
 % That's getting too much down into the details, I think -- also, these
 % numbers reflect a hastily organized, preliminary version of what we really
 % want to do.
 
+\PARAGRAPH{Data gathering}
+%
 Beyond encouraging conferences to take these sorts of simple steps, public
 accounting of conference emissions will generate data that future organizers
 can use.  To this end, emissions data should be published both in aggregate
@@ -180,8 +188,10 @@ of air travel for those sufficiently far away. This calculator could be
 expanded to account for other forms of conference emissions.  
 
 
-\SECTION{Put a Price on Carbon.}
+\SECTION{Put a Price on Carbon}
 
+\PARAGRAPH{Hard choices}
+%
 While publicly accounting for {\COtwoE} expenditures will incentivize some {\COtwoE}
 reductions, it is not likely, by itself, to induce major changes.
 %
@@ -269,6 +279,8 @@ However, the present trajectory of world emissions is unsustainable, and
 hard choices will have to be made if ACM is to play its part by reducing its
 own emissions. How do we motivate organizers to make them?
 
+\PARAGRAPH{A cost for carbon}
+%
 This dilemma is a microcosm of the one that all of society faces. To address
 it, many policy experts advocate some form of ``carbon pricing'' (either
 taxes or cap-and-trade schemes), which imposes a concrete, immediate cost on
@@ -279,6 +291,7 @@ efficient responses. Continuing the junk-food analogy, some municipalities
 such as New York city and Philadelphia have imposed a per-calorie tax on
 soft drinks, with some studies finding that doing so indeed reduced
 consumption~\cite{sodatax}.
+%MWH: The above is not a parenthetical, so the earlier junkfood analogy should not be, either
 
 Ideally, at some point, governments will impose carbon pricing uniformly,
 and all {\COtwoE}-intensive activities will have to pay it. But ACM can send a
@@ -299,6 +312,8 @@ sponsorship, or other means.  \iflater\mwh{Problem: We showed just above
   say that the surcharge will spur bold choices?  Maybe say that these
   choices won't necessarily be bad, but could be really great?}\fi
 
+\PARAGRAPH{Precipitating change}
+ %
 What should ACM do with the funds collected from this surcharge?  One can
 imagine many good uses, including carbon offsetting, defraying the costs of
 virtualizing conferences (livestreaming, etc.), and supporting ``green''
@@ -306,7 +321,7 @@ computing research. As an example of the last, ACM could help fund a
 cross-cutting research initiative specifically aimed at understanding how to
 best replace or approximate the socializing and networking aspects of
 conferences in a virtual setting.  But before any of this, the first concern
-should be to find ways of {\em reducing} the finanial burden of such a
+should be to find ways of {\em reducing} the financial burden of such a
 surcharge on those who may be disproportionately affected by it---students
 without grant support, participants from developing areas, etc.  That is,
 wealthier participants should subsidize the carbon footprints of less
@@ -349,7 +364,7 @@ The climate crisis is too important to ignore and too urgent to leave for
 world leaders to address at their own pace: Organizations at every scale
 must confront their own contributions, raise awareness among their members,
 and begin establishing new ways of doing business in the lower-carbon future
-that is coming.  ACM should lead the way!
+that is coming.  ACM should play its part!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
