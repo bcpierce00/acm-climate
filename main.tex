@@ -1,5 +1,5 @@
 \newif\ifdraft\drafttrue    % comments / todos for now
-\newif\iflater\latertrue    % comments / todos for final version
+\newif\iflater\laterfalse    % comments / todos for final version
 
 \documentclass[12pt]{article}
 
@@ -79,18 +79,18 @@ Indeed, scientific societies have an especially important role to
 play, since, for many members, travel to conferences represents a
 substantial or even dominant part of their individual contribution to
 climate change.  A single round-trip flight from Philadelphia to Paris emits
-the equivalent of about 1.8 tons of carbon dioxide (\COtwoE) per
-passenger~\cite{carboncalculator}, which is a significant fraction of the
+the equivalent of about 1.8 tons of carbon dioxide (\COtwoE, or informally
+``carbon'') per
+passenger~\cite{carboncalculator}. This is a significant fraction of the
 {\em total} yearly emissions for an average resident of the US (16.5 tons)
 or Europe (7 tons)~\cite{emissions}.
 Moreover, these emissions have no near-term technological
 fix, as jet fuel is difficult to replace with renewable energy
 sources~\cite{elec-air}.
-% \iflater\bcp{Trimmed this sentence: Reducing the \COtwoE{} footprint
-% of conferences will require a reduction in the footprint of the attendees'
-% air travel.}\fi
 
-How should ACM respond to these facts?  In 2016, ACM's Special
+How should ACM respond to these facts?
+
+In 2016, ACM's Special
 Interest Group on Programming Languages (SIGPLAN) convened an ad hoc Climate
 Committee to consider this question~\cite{ClimateCommittee}.  After
 investigating many options~\cite{ClimateCommitteReport}, we are putting
@@ -109,22 +109,22 @@ publicly report its carbon footprint}.
 These reports should be collected in a central place, in a uniform format.
 Most conferences' footprints will be dominated by participants' air travel,
 but the data gathered should go beyond this to include ground
-transportation, travel to in-person PC meetings, and estimated emissions
-from hotel and food.
+transportation, travel to in-person program committee meetings, and
+estimated emissions from hotels and food.
 
 ACM should develop tools to gather and publicize this data.  For example,
-SIGPLAN recently built an air-travel-focused {\COtwoE} calculator for
-conferences\iflater~\cite{ClimateCommittee}.  Users can upload conference
+SIGPLAN recently built an air-travel-focused carbon calculator for
+conferences~\cite{ClimateCommittee}.  Users can upload conference
 registration data, and the calculator will estimate the {\COtwoE} cost of
-air travel for those sufficiently far away. This calculator could be
-expanded to account for other forms of conference emissions.
+air travel for those sufficiently far away.
+% This calculator could be
+% expanded to account for other forms of conference emissions.
 
 There is some the reputational risk to ACM in taking the step of publicizing
 its carbon footprint: the numbers are likely to be high, and they may be
 used to criticize both the ACM and the broader academic community.  But
 making this information available is a crucial first step: we cannot manage
-what we have not measured.  And ACM is well positioned to develop tools that
-other academic societies can adopt.
+what we have not measured.
 
 \PARAGRAPH{Easy trimming}
 One effect of public accounting will be to nudge conference organizers and
@@ -133,9 +133,9 @@ are now required by law to post calorie counts of food items on menu boards;
 studies show that enlightened customers order, on average, up to 50 fewer
 calories a day~\cite{menu}.
 
-Similarly, SIGPLAN has been considering how to reduce emissions over the
-past few years, informed by an accounting of its own {\COtwoE}
-emissions. This discussion has led the organizers of two flagship
+Similarly, SIGPLAN has been considering how to reduce emissions, informed by
+an accounting of its own carbon footprint. This discussion has led the
+organizers of two flagship
 conferences (POPL and ICFP) to switch from in-person to online program
 committee meetings, joining a trend among other SIGs, and has prompted
 several conferences to increase investments in livestreaming and video
@@ -154,7 +154,7 @@ recording to support remote participation.
   each conference.  Colored bars represent percentages of participants whose
   home city is in each continent: blue for North America, orange for Europe,
   green for Asia.
-% \iflater\bcp{Richard: I find this a
+% \bcp{Richard: I find this a
 %     little hard to follow. Maybe you could simply label the different groups
 %     of conferences by their location? I think the "(NA)", "(EU)", and
 %     "(IAS)" are a bit hard to read and decode at first, so that I didn't
@@ -172,7 +172,7 @@ recording to support remote participation.
 
 \PARAGRAPH{Hard choices}
 
-However, while public accounting of {\COtwoE} will encourage easy
+However, while public accounting of emissions will encourage easy
 reductions, it is not likely, by itself, to induce major shifts in behavior.
 %
 Science is a fundamentally social process, and the conference system
@@ -200,21 +200,18 @@ The top diagram shows an
 estimated per-participant {\COtwoE} footprint for each instance of each
 conference over the past ten years (excluding a few for which we
 had trouble getting data), with larger dots representing higher emissions.
-Eyeballing this diagram, it seems that carbon-conscious
+Eyeballing this diagram, it might seem that carbon-conscious
 organizers should hold all of these conferences in either the northeast US or
 western Europe every year.  But the bottom visualization tells a
 different story.  The horizontal colored bar at the bottom represents
 the continent on which each conference was held, and each vertical bar gives
 a breakdown of the participants in that conference, colored according to the
-continent of their work address.  From a superficial glance
-at the colors, it is clear that, though a minority come from far away, the
+continent of their work address.  A glance
+at the colors makes clear that, though a minority come from far away, the
 majority of participants in each conference are local to the region where the
 conference is being held.
-% \iflater\bcp{That point could be strengthened by adding some
-%   numbers (just in the text, not a figure) about what percentage of
-%   conference attendees attend even one additional instance of the same
-%   conference...}\fi{}
- This suggests that always locating conferences in the
+%
+This suggests that always locating conferences in the
 same one or two places would significantly impact the diversity of the
 research community by discouraging participation from other parts of the
 world.  Indeed, one might conclude that, from the point of view of
@@ -241,7 +238,8 @@ much as possible!
 %   sections of the bars by continent, we instead color-coded them by distance
 %   traveled (in buckets of 500 miles, say)?}
 %
-These disparate perspectives suggest that reducing conference emissions may
+These disparate perspectives suggest that significantly reducing conference
+emissions may
 require genuinely painful compromises.  The impulse to ignore the issue is
 entirely understandable.
 
@@ -252,7 +250,7 @@ choices?
 
 \SECTION{Put a Price on Carbon}
 %
-This dilemma is a microcosm of one faced by all of society. To address it,
+This dilemma is a microcosm  of one faced by all of society. To address it,
 many policy experts advocate using some form of carbon pricing to impose a
 concrete, immediate cost on
 emissions~\cite{carbonprice}. Doing so makes manifest the hidden
@@ -260,9 +258,9 @@ environmental cost of emissions, incentivizing
 {\COtwoE}-reducing changes without mandating exactly which ones, and thus
 allowing for creative and efficient responses. Continuing the junk-food
 analogy,
-some municipalities including New York City and Philadelphia have imposed a
-per-calorie tax on soft drinks, with some studies finding that doing so
-indeed reduced consumption~\cite{sodatax}.
+some municipalities including Berkeley and Philadelphia have imposed a
+per-calorie tax on soft drinks; studies found that doing so
+significantly reduced consumption~\cite{sodatax}.
 
 Thus, our second proposal is that {\bf ACM should impose a surcharge on
   conferences based on their carbon footprint.}  The charge should start low
@@ -271,17 +269,17 @@ and increase steadily and predictably, year on year.
 Conference organizers can then choose how best to balance their
 budgets---whether
 by decreasing per-participant emissions, decreasing (physical)
-participation, increasing registration fees, soliciting additional corporate
+participation, increasing registration fees, soliciting corporate
 sponsorship, or other means.
 In this process, a primary concern
 should be to find ways of {reducing} the financial burden of such a
-surcharge on those who may be disproportionately affected by it---students
+surcharge on those disproportionately affected by it---students
 without grant support, participants from developing areas, etc.
-Wealthier participants should subsidize the carbon footprints of less
+Well-funded participants should subsidize the carbon surcharges of less
 wealthy ones.
 
 Ideally, at some point, governments will impose carbon pricing uniformly,
-and all {\COtwoE}-intensive activities will have to pay it. But ACM can send a
+and all carbon-intensive activities will have to pay it. But ACM can send a
 strong message about the importance of this issue---and get ahead of the
 coming changes---by acting now.
 
@@ -300,27 +298,32 @@ obvious possibility is purchasing \emph{carbon offsets}~\cite{CarbonOFfsetReport
 A carbon offset is sold by a vendor, who uses the funds to finance an
 activity that permanently removes or avoids emitting some amount of
 greenhouse gases.  The veracity and permanence of this activity is certified
-by a watchdog organization. (E.g., planting trees is typically not a certifiable
-activity, since it's hard to guarantee they won't be cut down, but
+by a watchdog organization. (E.g., planting trees is often considered not to
+be a certifiable
+activity, since it's hard to guarantee they won't be cut down;
+reductions from
 installing methane capture devices on landfill sites or buying
-fuel-efficient stoves to replace open-fire cooking in poor communities can
-be.)
+fuel-efficient stoves to replace open-fire cooking in poor communities are
+easier to predict.)
 Many organizations, including companies such as Google, Dell, Microsoft,
 General Motors, Delta Airlines, Lyft, and Expedia, as well as universities,
 academic societies, and even energy companies such as Exxon, now use
 carbon offsets to reduce their
 net footprint. ACM conferences should consider doing the same, and the
 purchases should be
-included in the public accounting we are proposing.  Indeed, ACM recently
-declared that conferences can offer attendees the option to pay for an
-offset during registration.  Other scientific societies and conferences are
-going further, rolling a carbon offset into the registration fee for every
-participant.
+included in the public accounting we are proposing.
+% For example\bcp{beter
+%   transition?}, ACM recently
+% declared that conferences can offer attendees the option to pay for an
+% offset during registration.  Other scientific societies and conferences are
+% going further, rolling a carbon offset into the registration fee for every
+% participant.
 
 Beyond buying offsets, one can
 imagine many good uses for the funds generated from a carbon surcharge: defraying the costs of
 virtualizing conferences (livestreaming, etc.), and supporting ``green''
-computing research. As an example of the last, ACM could help fund a
+computing research~\cite{rolnick2019tackling}.  As an example
+of the last, ACM could help fund a
 cross-cutting research initiative specifically aimed at understanding how to
 best replace or approximate the socializing and networking aspects of
 conferences in a virtual setting.
@@ -328,13 +331,13 @@ conferences in a virtual setting.
 Ultimately, however, carbon offsets and other ``good works'' cannot
 substitute for real reductions in emissions~\cite{anderson2012inconvenient,
   carbon-offsets-are-not-our-get-out-jail-free-card}: they are, at best, a
-short-term expedient that buys a little time to develop strategies for more
+short-term expedient that buys time to agree on more
 difficult cuts.
 %
 Indeed, the main goal of carbon pricing should be to stimulate creative
 rethinking of the conference model itself---for example, seriously
 considering alternatives such as rapid-turnaround journal-only publishing
-models, once-a-year megaconferences, and entirely virtual
+models, yearly megaconferences, and entirely virtual
 conferences~\cite{NCN}.
 %
 A potential sticking point is that some of these will significantly reduce
@@ -344,12 +347,12 @@ conference-focused business model is also adjusted.
 
 \PARAGRAPH{What should the price be?}
 
-Another key issue in implementation of this second proposal will be how to
+Another key issue in implementing this second proposal will be how to
 set a price that reflects the true social cost of carbon, without unduly
 harming the scientific community.
 %
 Initial data gathering will play a role, and a steady and predictable annual
-ramp on the price is a necessary component, but setting both the initial
+increase is a necessary component, but setting both the initial
 price and the slope of the ramp will likely be difficult political
 decisions.
 %
@@ -366,10 +369,11 @@ Law''~\cite{Rockstrom1269}.
 
 The climate crisis is too urgent to leave to world leaders to address at
 their own pace: Organizations at every scale, including ACM, must confront
-their own contributions, raise awareness among their members, and establish
-new ways of doing business in the lower-carbon future that is now upon us.
-We in ACM should do our part by mandating public accounting of conference
-carbon footprints and by putting a concrete price on the carbon that we use.
+their own contributions, raise awareness and foster discussion among their
+members~\cite{acm-climate}, and establish new ways of doing business in the
+lower-carbon future that is now upon us.  We in ACM should do our part by
+mandating public accounting of conference carbon footprints and by putting a
+concrete price on the carbon that we use.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -576,6 +580,11 @@ carbon footprints and by putting a concrete price on the carbon that we use.
 % \end{itemize}
 % }
 
+\bibliographystyle{unsrt}
+\bibliography{local}
+
+\iflater
+
 \iflater
 \bcp{Things still missing:
   \begin{itemize}
@@ -596,10 +605,6 @@ carbon footprints and by putting a concrete price on the carbon that we use.
 }
 \fi
 
-\bibliographystyle{unsrt}
-\bibliography{local}
-
-\iflater
 \newpage
 \section*{Permissions for figures}
 
